@@ -6,8 +6,7 @@ jobs:
   run-bash-commands:
     name: Execute Bash Commands
     runs-on: self-hosted  
-    container: 
-      image: ubuntu:22.04      
+    container: ubuntu:22.04      
       options: -it
 
     steps:
