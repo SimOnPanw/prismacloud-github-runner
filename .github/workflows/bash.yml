@@ -9,10 +9,6 @@ jobs:
     container: ubuntu:22.04
 
     steps:
-    - name: Sleep for 65 Seconds
-      run: |
-        sleep 600
-
     - name: Checkout Repository
       uses: actions/checkout@v3
 
