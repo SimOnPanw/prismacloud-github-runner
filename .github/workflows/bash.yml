@@ -8,7 +8,7 @@ jobs:
     runs-on: self-hosted  
     container: 
       image: ubuntu:22.04      
-      options: --interactive
+      options: --interactive --tty
 
     steps:
     - name: Checkout Repository
