@@ -6,8 +6,7 @@ jobs:
   run-bash-commands:
     name: Execute Bash Commands
     runs-on: self-hosted  # Specifies that this job runs on a self-hosted runner
-    container:
-      image: ubuntu:latest
+    container: ubuntu:latest
 
     steps:
     - name: Checkout Repository
