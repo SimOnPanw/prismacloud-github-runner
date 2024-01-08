@@ -1,0 +1,28 @@
+name: Bash Commands Workflow
+
+on: [push]  # Triggers the workflow on push events
+
+jobs:
+  run-bash-commands:
+    name: Execute Bash Commands
+    runs-on: self-hosted  # Specifies that this job runs on a self-hosted runner
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Display Contents of the Current Directory
+      run: |
+        ls
+
+    - name: Display Contents of a Specific File
+      run: |
+        cat README.md
+
+    - name: Sleep for 5 Seconds
+      run: |
+        sleep 5
+
+    - name: List All Files Recursively
+      run: |
+        ls -R
