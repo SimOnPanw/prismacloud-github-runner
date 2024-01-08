@@ -6,7 +6,9 @@ jobs:
   run-bash-commands:
     name: Execute Bash Commands
     runs-on: self-hosted  
-    container: ubuntu:22.04
+    container: 
+      image: ubuntu:22.04      
+      options: --interactive
 
     steps:
     - name: Checkout Repository
