@@ -9,7 +9,6 @@ jobs:
 
     container: 
       image: ubuntu:22.04      
-      options: --interactive --tty
 
     steps:
     - name: Checkout Repository
@@ -18,6 +17,7 @@ jobs:
     - name: Display Contents of the Current Directory
       run: |
         ls
+      
 
     - name: Display Contents of a Specific File
       run: |
