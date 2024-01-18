@@ -16,6 +16,7 @@ jobs:
 
     - name: install curl with apt
       run: |
+        apt update
         apt install curl -y
       
 
