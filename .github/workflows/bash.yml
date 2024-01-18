@@ -39,5 +39,3 @@ jobs:
     - name: Step that should failed
       run: |
         curl www.google.com
-  
-  
