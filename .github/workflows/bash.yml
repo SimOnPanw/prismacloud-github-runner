@@ -37,6 +37,6 @@ jobs:
 
     - name: Step that should failed
       run: |
-        echo "This step should failed" > failed.txt
+        wget www.google.com
   
   
