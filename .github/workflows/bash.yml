@@ -14,9 +14,9 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    - name: Display Contents of the Current Directory
+    - name: install curl
       run: |
-        ls
+        apt install curl -y
       
 
     - name: Display Contents of a Specific File
@@ -37,6 +37,6 @@ jobs:
 
     - name: Step that should failed
       run: |
-        wget www.google.com
+        curl www.google.com
   
   
