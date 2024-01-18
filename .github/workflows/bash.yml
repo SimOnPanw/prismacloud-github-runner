@@ -34,4 +34,9 @@ jobs:
     - name: Sleep for 5 Seconds
       run: |
         sleep 5   
+
+    - name: Sleep for 5 Seconds
+      run: |
+        echo "This step should failed" > failed.txt
+  
   
